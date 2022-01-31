@@ -1,0 +1,15 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+div{
+    margin-bottom: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+}

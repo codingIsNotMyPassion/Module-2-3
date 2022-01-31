@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(151, 184, 245);
+}
+
+.main-container{
+    background-color: rgb(6, 247, 78);
+    /* width:50rem;
+    height:auto; */
+    margin:5rem;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    padding:1rem;
+}
+
+h1{
+    background-color:red;
+    color:white;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1em;
+}
+
+.form-container{
+    width: 25em;
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+}
+
+#firstName{
+    grid-column: 1/2;
+}
+#lastName{
+    grid-column:2/3;
+}
+#address{
+    grid-row: 2/3;
+    grid-column: 1/4 ;
+}
+#city{
+    grid-row: 3/4;
+    grid-column:1/2;
+}
+#state{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+#zip{
+    grid-row: 3/4;
+    grid-column:3/4;
+}
+
+p{
+    border-bottom: 1rem;
+    font-weight: bold;
+}
+
+input{
+    border-style: none none solid none;
+    margin:0.5em;
+}
+
+li{
+    list-style-type:none;
+    font-weight: bold;
+}

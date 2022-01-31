@@ -1,0 +1,77 @@
+<!-- Write HTML input tags snippet to show default values for all Form elements -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- input -->
+    <input type="text" id="fname" name="fname">
+  </div>
+  <div>
+    <!-- label -->
+    <label for="fname">First name:</label>
+  </div>
+  <div>
+    <!-- select -->
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+  </div>
+  <div>
+    <!--text area-->
+    <textarea name="message" rows="10" cols="30">
+  The cat was playing in the garden.
+  </textarea>
+  </div>
+  <div>
+    <!-- button -->
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+  </div>
+  <div>
+    <!-- field set -->
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </div>
+
+  <div>
+    <!-- datalist -->
+    <form action="/action_page.php">
+      <input list="browsers">
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+    </form>
+  </div>
+</body>
+
+</html>
